@@ -1,14 +1,18 @@
-﻿
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
+using System.Web;
+
 namespace WebEval.Models
 {
-    using System.Data.Entity;
-
-    public class DataContext: DbContext
+    public class DataContext : DbContext
     {
         public DataContext():base("DefaultConnection")
         {
 
         }
-    }
 
+        public System.Data.Entity.DbSet<WebEval.Models.Estudiante> Estudiantes { get; set; }
+    }
 }
