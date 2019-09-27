@@ -19,5 +19,7 @@ namespace WebEval.Models
         public Estado estado { get; set; }
         [Required]
         public string Materia { get; set; }
+        [Required]
+        public Estudiante Estudiante { get; set; }
     }
 }
